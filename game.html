@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/stylesheet.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <link rel="shortcut icon" href="#">
+
+    <title>TOC - The Ocean Cleaner</title>
+</head>
+<body> 
+    
+    <div class="flexbox">
+    
+        <div class="scoreSection">
+
+            <div class="scoreRectangle leftRec">
+                <img class="icon trashIcon" src="./assets/icons/trashbin.png" alt="trash" />
+                <div class="rubbishScore">0</div>  
+            </div>
+    
+            <div class="scoreRectangle midRec" id="deadDwellers">
+                <img class="icon deadDwellerIcon" src="./assets/icons/fish-skeleton.png" alt="fish skeleton" />
+                <div  class="deadDwellers">0</div>   
+            </div>
+
+            <div class="scoreRectangle rightRec" id="percentage">
+                
+                <div class="icons">
+                    <img class="icon trashIcon rightScoreLeft" src="./assets/icons/trashbin.png" alt="trash" />
+                    <p>/</p>
+                    <img class="icon deadDwellerIcon rightScoreRight" src="./assets/icons/fish-skeleton.png" alt="fish skeleton" />
+                </div>
+                <div  class="percentage">1.00</div>
+            </div>
+        </div>
+
+        
+        <div class="placement">
+            
+            <div class="setBottom">
+                <section id ="game">
+                    
+                </section>
+                <section class ="description">
+                    <h1>TOC - The Ocean Cleaner</h1>
+                    <h2> Clean the oceans with your harpoon!</h2> 
+                    <p class="text1">
+                        Free the oceans from as much plastic as possible!
+                                        <br>
+                        You can catch a maximum of 10 ocean dwellers per dive.
+                                        <br>
+                        Never collect more sea dwellers than plastic, otherwise you've lost!
+                    </p>
+                    <p class= "instructions">Use arrow keys: to dive up, dive down, dive forward, dive backward. <br>
+                        Use spacebar: to shoot with your harpoon.</p>
+                </section>
+            </div>
+
+        
+            <section class="gameDescription">
+
+                <div class="scoreRectangle secondLine" id = "ox">
+                    <img class="oxygenBottle" src="./assets/icons/oxygen.png" alt="oxygen"/>
+                    <div class="timer">100</div>  
+                    <p>%</p>
+                </div>
+
+                <div class="scoreRectangle secondLine" id = "munition">
+                    <img class="icon munitionIcon" src="./assets/icons/harpoon.png" alt="munition"/>
+                    <div class="munitionPieces">8</div>
+                </div>
+    
+                <div class="scoreRectangle secondLine" id = "reload">
+                    <div class="reloadButton">CLICK <br> to reload harpoon</div>
+                    <!-- <p class ="numReload">0</p> -->
+                </div>
+            </section>  
+        </div>        
+            
+
+            
+        
+    </div>
+    <script src="./js/arrow.js"></script>
+    <script src="./js/rubbish.js"></script>
+    <script src="./js/oceanDweller.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/diver.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
