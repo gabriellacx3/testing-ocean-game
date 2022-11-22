@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    color: #3e4047;
+    margin-top: 10rem;
+    background-color:#3e4047;
+    display: flex;
+	justify-content: center;
+    align-items: flex-start;
+}
+
+.square {
+    background-image: url('../assets/background/Hintergrund.png');
+    background-size: 100% 100%;
+    width: 150rem;
+    height: 150rem;
+}
+
+.box {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.message {
+    font-size: 6rem;
+    margin-top: 50rem;
+    font-weight: bold;
+    text-align: center;
+    color: #3e4047;
+    margin-bottom: 7rem;
+}
+
+.box p{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.clickStartAgain {
+    font-size: 8rem;
+    text-decoration: none;
+    color:#2f9aa5;
+    background-color: #2864a8;
+    border-radius: 70% 70% 0% 0%;
+    margin-top: 13rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    width: 150rem;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.scoreSection {
+    /* align-self:center */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.scoreRectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #fbf593;
+    border-radius: 30px 30px 30px 30px;
+    width: 600px;
+    height: 140px;
+    font-size: 5rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.oxygenBottle {
+    width: 9rem;
+    height: 9rem;
+}
+
+.leftRec{
+    margin-right: 4rem;
+    margin-left: 2rem;
+    /*background-color: #2e98a4;*/
+}
+
+.icon {
+    margin-right: 2rem;
+}
+.trashIcon {
+    width: 4rem;
+    height: 5rem;
+}
+
+.rubbishScore {
+    font-weight: bold;
+}
+
+
+.deadDwellerIcon {
+    width: 8rem;
+    height: 5rem;   
+}
+
+.deadDwellers{
+    font-weight: bold;
+}
+
+.rightRec{
+    margin-left: 4rem;
+    width: 600px;
+}
+
+.rightRec p {
+    color: black;
+    font-size: 3rem;
+}
+
+.rightScoreLeft {
+    margin-right: .7rem;
+}
+
+.rightScoreRight{
+    margin-left: .7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.secondLine {
+    margin-top: 2rem;
+}
+
+.oxRec {
+    margin-left: 2rem;
+}
